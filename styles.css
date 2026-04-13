@@ -111,7 +111,7 @@ button:active {
 .tabela-inferior {
     border: 2px solid #772FD3;
     border-radius: 28px;
-    margin: 36px 24px 23px 24px;
+    margin: 36px auto 23px auto;
     width: 300px;
     height: 342px;
     padding: 36px 24px 23px;
