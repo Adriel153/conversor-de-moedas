@@ -29,7 +29,7 @@ main {
     background-color: aliceblue;
     margin: auto auto 30px auto;
     width: 370px;
-    height: 715px;
+    height: 765px;
     border-radius: 18px;
 }
 
@@ -78,6 +78,8 @@ input {
     opacity: 1;
     padding: 10px;
     width: 100%;
+    font-weight: 700;
+    font-size: 16px;
 }
 
 button {
@@ -95,92 +97,48 @@ button {
 
 }
 
-button:hover{
-    opacity:0.8;
+button:hover {
+    opacity: 0.8;
 }
 
-#brasil {
-    width: 44px;
-    height: 44px;
-    opacity: 1;
-    margin: auto;
-    display: block;
-    left: -5px;
-
+button:active {
+    opacity: 0.6;
 }
 
-#seta {
-    display: block;
-    margin: 84px auto 5px auto;
-}
 
-#paragrafo1 {
-    white-space: nowrap;
-    margin: 0 5px 0 0;
-    display: block;
-    align-items: center;
-}
 
 .tabela-inferior {
-    display: block;
     border: 2px solid #772FD3;
     border-radius: 28px;
     margin: 36px 24px 23px 24px;
     width: 300px;
-    height: 300px;
-   
+    height: 342px;
+    padding: 36px 24px 23px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+
 }
 
-#b1{
-    margin: 5px -25px 5px -25px;
-    display: block;
+#brasil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.label4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+select {
+    font-family: "Roboto";
     font-weight: 700;
-    font-size: 20px
-
-}
-
-.real{
-    display:block;
-    margin: 3px 11px;
-}
-
-.brasil{
-    margin: 12px auto 5px auto;
-}
-
-.estados-unidos{
-    margin: 12px auto 5px auto;
-    display: block;
-}
-
-.label4{
-    margin: 0 92px 0 97px;
-    display: block;
-    white-space: nowrap;
-
-}
-
-
-select{
-    width: 100%;
-    padding: 6px;
+    font-size: 16px;
+    cursor: pointer;
     appearance: none;
 }
-
-input{
-    padding: 10px;
-    width: 100%;
-}
-
-p{
-    font-weight: 700;
-    font-size: 14px;
-}
-
-.us{
-    margin: 5px auto 5px auto;
-    display: block;
-    font-weight: 700;
-    font-size: 20px
-}
-
