@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles.css">
+    <script src="/scripts.js" defer></script>
     <title>Conversor de Moedas</title>
 </head>
 
@@ -26,11 +27,11 @@
             <label id="label2">
                 Converter <b>para</b>
                 <select id="select2">
-                    <option>
+                    <option value="dolar">
                         US$ Dólar Americano
                     </option>
 
-                    <option>
+                    <option value="euro">
                         € Euro
                     </option>
                 </select>
@@ -39,11 +40,11 @@
             <laibel id="label3">
                 Valor
 
-                <input placeholder="R$ 0,00" type="number"="0.00">
+                <input class="inputValue" placeholder="R$ 0,00" type="number"="0.00">
 
             </laibel>
 
-            <button>
+            <button class=button>
                 <b>Converter</b>
             </button>
         </section>
@@ -59,7 +60,7 @@
 
         <label class="label4">
             <img class="estados-unidos" src="/assets/estados-unidos (1) 1.png" alt="Estados Unidos.img">
-            Dólar Americano
+            <p id="money-Us">Dólar Americano</p>
             <p><b class="us">US$ 0,00</b></p>
         </label>
        </div>
