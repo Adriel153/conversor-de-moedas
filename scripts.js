@@ -10,18 +10,28 @@ function convertValue() {
     const dolarToday = 5.2
     const euroToday = 6.2
 
+    const changeImag = document.querySelector(".estados-unidos")
+
+    if (!valorInput || isNaN(parseFloat(valorInput))) {
+        valueReal.innerHTML = "R$ 0,00"
+        valueConvert.innerHTML = valueOptions.value === "dolar" ? "US$ 0,00" : "€ 0,00"
+        return
+    }
+
     // Atualizar o nome da moeda
     if (valueOptions.value == "dolar") {
         textMoeda.innerHTML = "Dólar Americano"
+        changeImag.src = "./assets/estados-unidos (1) 1.png"
     } else if (valueOptions.value == "euro") {
         textMoeda.innerHTML = "Euro"
+        changeImag.src = "./assets/euro.png"
     }
 
     if (valueOptions.value === "dolar") {
-        const convertedValue = valorInput / dolarToday
+        const convertedValue = parseFloat(valorInput) / dolarToday
         valueConvert.innerHTML = "US$ " + convertedValue.toFixed(2)
     } else if (valueOptions.value === "euro") {
-        const convertedValue = valorInput / euroToday
+        const convertedValue = parseFloat(valorInput) / euroToday
         valueConvert.innerHTML = new Intl.NumberFormat("de-DE", {
             style: "currency",
             currency: "EUR"
@@ -34,6 +44,5 @@ function convertValue() {
 }
 
 buttonConvert.addEventListener("click", convertValue)
+valueOptions.addEventListener("change", convertValue)
 
-currencySelect.addEventListener("change", cheageMoeda)
-buttonConvert.addEventListener("click", convertValue)
