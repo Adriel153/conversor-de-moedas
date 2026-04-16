@@ -157,5 +157,8 @@ h1{
     height: 50px;
     font-size: 15px;
     white-space: nowrap;
+    margin: 2px auto;
+    text-align: center;
+    margin-left: 45%;
 }
 
